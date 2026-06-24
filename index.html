@@ -1,248 +1,343 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global Textile Hub | 外贸面料采购平台</title>
+    <meta
+      name="description"
+      content="China professional fabric supplier for Iraq and Middle East buyers. Knitted, woven and functional fabrics with ready stock, FOB/CIF reference prices and RFQ service."
+    />
+    <title>SinoTex Middle East | China Fabric Supplier for Iraq</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home">
-        <span class="brand-mark">GTH</span>
+      <a class="brand" href="#home" aria-label="SinoTex Middle East home">
+        <span class="brand-mark">ST</span>
         <span>
-          <strong>Global Textile Hub</strong>
-          <small>Fabric Export Center</small>
+          <strong>SinoTex Middle East</strong>
+          <small data-i18n="brandSub">China Fabric Supplier</small>
         </span>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#categories">面料品类</a>
-        <a href="#pricing">面料价格</a>
-        <a href="#inventory">现货库存</a>
-        <a href="#cart">询价车</a>
-        <a href="#service">客服</a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation">Menu</button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#products" data-i18n="navProducts">Products</a>
+        <a href="#inventory" data-i18n="navInventory">Inventory</a>
+        <a href="#pricing" data-i18n="navPricing">Pricing</a>
+        <a href="#freight" data-i18n="navFreight">Freight</a>
+        <a href="#rfq" data-i18n="navRfq">RFQ</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
-      <a class="header-action" href="#service">Contact Supplier</a>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" type="button">العربية</button>
+        <a class="btn small primary" href="https://wa.me/8613800000000" target="_blank" rel="noreferrer" data-i18n="whatsapp">
+          WhatsApp
+        </a>
+      </div>
     </header>
 
     <main>
       <section class="hero" id="home">
-        <div class="hero-overlay"></div>
+        <div class="hero-media" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Fabric Supplier for Global Buyers</p>
-          <h1>外贸面料采购、报价、库存与询价一站式平台</h1>
-          <p class="hero-copy">
-            棉布、涤纶、亚麻、针织、梭织、牛仔与功能面料，支持样品、小单试单、大货报价和全球出口服务。
+          <p class="eyebrow" data-i18n="heroEyebrow">Professional China Fabric Supplier for Iraq & Middle East</p>
+          <h1 data-i18n="heroTitle">Reliable fabric sourcing, ready stock and export service for Middle East buyers.</h1>
+          <p data-i18n="heroCopy">
+            We supply knitted, woven and functional fabrics with stable quality, clear stock status, FOB/CIF reference prices
+            and fast RFQ response for textile traders, garment factories and wholesale buyers.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#categories">Browse Fabrics</a>
-            <a class="btn secondary" href="#inventory">Check Stock</a>
+            <a class="btn primary" href="#products" data-i18n="browseProducts">Browse Products</a>
+            <a class="btn ghost" href="#rfq" data-i18n="sendRfq">Send RFQ</a>
+            <a class="btn ghost" href="#catalog" id="catalogDownload" data-i18n="downloadCatalog">Download PDF Catalog</a>
           </div>
         </div>
-        <div class="hero-panel" aria-label="Quick quote summary">
-          <span>Fast Quote</span>
+        <aside class="hero-card" aria-label="Export highlights">
+          <span data-i18n="quickQuote">Quick Quote</span>
           <strong>24h</strong>
-          <p>提交询价后，业务员根据数量、颜色、目的港和交期给出出口报价。</p>
+          <p data-i18n="quickQuoteCopy">Sales team replies with fabric options, stock, MOQ, price and shipping advice.</p>
+        </aside>
+      </section>
+
+      <section class="stats-band" aria-label="Company strengths">
+        <div>
+          <strong>18+</strong>
+          <span data-i18n="yearsExport">Years export experience</span>
+        </div>
+        <div>
+          <strong>60,000 m2</strong>
+          <span data-i18n="factoryArea">Factory and warehouse area</span>
+        </div>
+        <div>
+          <strong>1.2M m</strong>
+          <span data-i18n="monthlyCapacity">Monthly fabric capacity</span>
+        </div>
+        <div>
+          <strong>35+</strong>
+          <span data-i18n="markets">Export markets</span>
         </div>
       </section>
 
-      <section class="section intro-band">
-        <div>
-          <span class="metric">800+</span>
-          <p>常规面料 SKU</p>
+      <section class="section company-section">
+        <div class="section-copy">
+          <p class="eyebrow" data-i18n="companyEyebrow">Company Strength</p>
+          <h2 data-i18n="companyTitle">Built for B2B fabric buyers who need speed, stock and dependable quality.</h2>
+          <p data-i18n="companyCopy">
+            From yarn selection and dyeing follow-up to warehouse packing and export documents, our team supports Middle East
+            buyers with practical sourcing, sample service and shipment coordination.
+          </p>
         </div>
-        <div>
-          <span class="metric">120k m</span>
-          <p>可售现货库存</p>
-        </div>
-        <div>
-          <span class="metric">30+</span>
-          <p>出口国家与地区</p>
-        </div>
-        <div>
-          <span class="metric">7-15 days</span>
-          <p>常规大货交期</p>
+        <div class="strength-grid">
+          <article>
+            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=900&q=80" alt="Factory production environment" />
+            <h3 data-i18n="factory">Factory Production</h3>
+            <p data-i18n="factoryCopy">Partner mills for dyeing, finishing, knitting and weaving with stable inspection flow.</p>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80" alt="Fabric warehouse shelves" />
+            <h3 data-i18n="warehouse">Warehouse Capacity</h3>
+            <p data-i18n="warehouseCopy">Ready stock and rolling inventory for fast sampling, consolidation and shipment.</p>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=900&q=80" alt="Export container and logistics" />
+            <h3 data-i18n="export">Export Operations</h3>
+            <p data-i18n="exportCopy">FOB, CIF and mixed-container support for Iraq, GCC, Jordan, Turkey and nearby markets.</p>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="categories">
+      <section class="section products-section" id="products">
         <div class="section-heading">
-          <p class="eyebrow">Fabric Categories</p>
-          <h2>面料品类</h2>
-          <p>按材质、用途和工艺快速筛选，适合服装品牌、批发商和服装厂采购。</p>
+          <div>
+            <p class="eyebrow" data-i18n="productsEyebrow">Product Center</p>
+            <h2 data-i18n="productsTitle">Hot-selling fabrics for Iraq and Middle East markets</h2>
+          </div>
+          <p data-i18n="productsCopy">Filter by category and review GSM, width, MOQ, stock status and tier price before sending RFQ.</p>
         </div>
-        <div class="category-grid">
-          <article class="category-card">
-            <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=900&q=80" alt="Cotton fabric texture" />
-            <div>
-              <h3>Cotton Fabric 棉布</h3>
-              <p>府绸、斜纹、帆布、巴厘纱，适合衬衫、童装、家纺。</p>
-              <span>MOQ 500m</span>
-            </div>
-          </article>
-          <article class="category-card">
-            <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=900&q=80" alt="Polyester satin fabric" />
-            <div>
-              <h3>Polyester Fabric 涤纶</h3>
-              <p>雪纺、色丁、春亚纺、塔丝隆，价格稳定，交期灵活。</p>
-              <span>From $0.90/m</span>
-            </div>
-          </article>
-          <article class="category-card">
-            <img src="https://images.unsplash.com/photo-1598368195835-91e67f80c9d8?auto=format&fit=crop&w=900&q=80" alt="Linen fabric rolls" />
-            <div>
-              <h3>Linen & Blend 亚麻</h3>
-              <p>纯亚麻、棉麻、粘麻，适合夏装、女装和休闲服饰。</p>
-              <span>Custom color</span>
-            </div>
-          </article>
-          <article class="category-card">
-            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=900&q=80" alt="Knitted fabric swatches" />
-            <div>
-              <h3>Knitted Fabric 针织</h3>
-              <p>汗布、罗纹、卫衣布、弹力布，支持克重和手感定制。</p>
-              <span>Sample ready</span>
-            </div>
-          </article>
-        </div>
-      </section>
 
-      <section class="section split-section" id="pricing">
-        <div class="section-heading compact">
-          <p class="eyebrow">Reference Price</p>
-          <h2>面料价格</h2>
-          <p>价格为外贸参考区间，最终报价根据订单数量、颜色、包装、汇率和贸易条款确认。</p>
+        <div class="toolbar" role="group" aria-label="Product categories">
+          <button class="filter-btn active" data-category="all" data-i18n="all">All</button>
+          <button class="filter-btn" data-category="knitted" data-i18n="knitted">Knitted</button>
+          <button class="filter-btn" data-category="woven" data-i18n="woven">Woven</button>
+          <button class="filter-btn" data-category="functional" data-i18n="functional">Functional</button>
         </div>
-        <div class="price-table-wrap">
-          <table class="price-table">
-            <thead>
-              <tr>
-                <th>Product</th>
-                <th>Composition</th>
-                <th>MOQ</th>
-                <th>FOB Price</th>
-                <th>Lead Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Cotton Poplin</td>
-                <td>100% Cotton</td>
-                <td>500m/color</td>
-                <td>$1.20 - $2.80/m</td>
-                <td>10-15 days</td>
-              </tr>
-              <tr>
-                <td>Polyester Satin</td>
-                <td>100% Polyester</td>
-                <td>800m/color</td>
-                <td>$0.90 - $2.20/m</td>
-                <td>7-12 days</td>
-              </tr>
-              <tr>
-                <td>Linen Blend</td>
-                <td>Linen/Cotton</td>
-                <td>300m/color</td>
-                <td>$2.50 - $5.00/m</td>
-                <td>12-18 days</td>
-              </tr>
-              <tr>
-                <td>Rib Knit</td>
-                <td>Cotton/Spandex</td>
-                <td>400kg/color</td>
-                <td>$3.20 - $6.50/kg</td>
-                <td>10-16 days</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
+        <div class="product-grid" id="productGrid"></div>
       </section>
 
       <section class="section inventory-section" id="inventory">
         <div class="section-heading">
-          <p class="eyebrow">Ready Stock</p>
-          <h2>面料库存</h2>
-          <p>现货款可快速寄样或出货，点击“加入询价车”生成采购需求。</p>
+          <div>
+            <p class="eyebrow" data-i18n="inventoryEyebrow">Inventory Management</p>
+            <h2 data-i18n="inventoryTitle">Ready stock, production stock and shippable stock</h2>
+          </div>
+          <p data-i18n="inventoryCopy">Use filters to match color, GSM and available quantity for quick Middle East shipments.</p>
         </div>
-        <div class="toolbar" role="group" aria-label="Inventory filters">
-          <button class="filter-btn active" data-filter="all">全部</button>
-          <button class="filter-btn" data-filter="cotton">棉布</button>
-          <button class="filter-btn" data-filter="polyester">涤纶</button>
-          <button class="filter-btn" data-filter="linen">亚麻</button>
-          <button class="filter-btn" data-filter="knit">针织</button>
+
+        <div class="inventory-filters">
+          <label>
+            <span data-i18n="filterColor">Color</span>
+            <select id="colorFilter">
+              <option value="all" data-i18n="all">All</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="filterGsm">GSM</span>
+            <select id="gsmFilter">
+              <option value="all" data-i18n="all">All</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="filterQty">Minimum Stock</span>
+            <input type="number" id="qtyFilter" min="0" step="1000" placeholder="10000" />
+          </label>
+          <button class="btn secondary" id="resetInventory" type="button" data-i18n="reset">Reset</button>
         </div>
-        <div class="product-grid" id="productGrid"></div>
+
+        <div class="table-card">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th data-i18n="tableProduct">Product</th>
+                <th data-i18n="tableColor">Color</th>
+                <th data-i18n="tableGsm">GSM</th>
+                <th data-i18n="tableReady">Ready Stock</th>
+                <th data-i18n="tableProduction">In Production</th>
+                <th data-i18n="tableShippable">Shippable</th>
+                <th data-i18n="tableStatus">Status</th>
+              </tr>
+            </thead>
+            <tbody id="inventoryRows"></tbody>
+          </table>
+        </div>
       </section>
 
-      <section class="section cart-section" id="cart">
-        <div class="section-heading compact">
-          <p class="eyebrow">Inquiry Cart</p>
-          <h2>购物车 / 询价单</h2>
-          <p>外贸采购通常先生成询价单，再由业务员确认最终价格、包装、运输和付款方式。</p>
+      <section class="section pricing-section" id="pricing">
+        <div class="section-copy">
+          <p class="eyebrow" data-i18n="pricingEyebrow">Tier Price</p>
+          <h2 data-i18n="pricingTitle">FOB and CIF reference pricing for RFQ discussion</h2>
+          <p data-i18n="pricingCopy">
+            Prices are references for B2B negotiation. Final quote depends on quantity, color, packing, exchange rate,
+            destination and delivery schedule.
+          </p>
         </div>
-        <div class="cart-layout">
-          <div class="cart-box">
-            <div class="cart-head">
-              <strong>Selected Fabrics</strong>
-              <button class="link-btn" id="clearCart">Clear</button>
-            </div>
-            <div class="cart-items" id="cartItems">
-              <p class="empty-cart">还没有选择面料。可以从库存列表加入询价车。</p>
-            </div>
+        <div class="table-card">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th data-i18n="tableProduct">Product</th>
+                <th>1,000-4,999m</th>
+                <th>5,000-19,999m</th>
+                <th>20,000m+</th>
+                <th data-i18n="tableCif">CIF Iraq Ref.</th>
+              </tr>
+            </thead>
+            <tbody id="priceRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section cart-section" id="rfq">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="rfqEyebrow">RFQ System</p>
+            <h2 data-i18n="rfqTitle">Inquiry cart instead of online payment</h2>
           </div>
-          <form class="quote-form">
+          <p data-i18n="rfqCopy">Add multiple fabrics to the cart, then send one RFQ to receive official quotation from our sales team.</p>
+        </div>
+
+        <div class="rfq-layout">
+          <div class="cart-panel">
+            <div class="panel-head">
+              <strong data-i18n="selectedFabrics">Selected Fabrics</strong>
+              <button class="link-btn" id="clearCart" type="button" data-i18n="clear">Clear</button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+          </div>
+
+          <form class="rfq-form" id="rfqForm">
+            <div class="form-grid">
+              <label>
+                <span data-i18n="companyName">Company Name</span>
+                <input name="company" required placeholder="Baghdad Textile Trading" />
+              </label>
+              <label>
+                <span data-i18n="contactPerson">Contact Person</span>
+                <input name="contact" required placeholder="Mr. Ahmed" />
+              </label>
+              <label>
+                <span data-i18n="country">Country</span>
+                <input name="country" required placeholder="Iraq" />
+              </label>
+              <label>
+                <span>WhatsApp</span>
+                <input name="whatsapp" required placeholder="+964..." />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required placeholder="buyer@example.com" />
+              </label>
+              <label>
+                <span data-i18n="purchaseQty">Purchase Quantity</span>
+                <input name="quantity" placeholder="20,000 meters" />
+              </label>
+            </div>
             <label>
-              Company Name
-              <input type="text" placeholder="Your company" />
+              <span data-i18n="requirements">Requirement Details</span>
+              <textarea name="message" placeholder="Colors, GSM, width, destination port, delivery time..."></textarea>
             </label>
-            <label>
-              Email / WhatsApp
-              <input type="text" placeholder="buyer@example.com / +1..." />
-            </label>
-            <label>
-              Destination Port
-              <input type="text" placeholder="Los Angeles / Hamburg / Dubai" />
-            </label>
-            <label>
-              Message
-              <textarea placeholder="Color, quantity, sample request, delivery time..."></textarea>
-            </label>
-            <button type="button" class="btn primary full">Submit Inquiry</button>
+            <button class="btn primary full" type="submit" data-i18n="submitRfq">Generate RFQ Email</button>
+            <p class="form-note" data-i18n="formNote">Prototype note: this opens your email client. Production version can send automatically through Node.js.</p>
           </form>
         </div>
       </section>
 
-      <section class="section service-section" id="service">
-        <div class="service-card">
-          <p class="eyebrow">Customer Service</p>
-          <h2>客服与采购支持</h2>
-          <p>支持样品确认、面料推荐、颜色定制、报价单制作和出口运输咨询。</p>
-          <div class="service-actions">
-            <a class="btn primary" href="mailto:sales@example.com">Email Sales</a>
-            <a class="btn secondary" href="https://wa.me/8613800000000">WhatsApp</a>
+      <section class="section freight-section" id="freight">
+        <div class="section-copy">
+          <p class="eyebrow" data-i18n="freightEyebrow">Freight Estimator</p>
+          <h2 data-i18n="freightTitle">Estimate sea, land and air freight for Iraq and nearby markets</h2>
+          <p data-i18n="freightCopy">Use this as a pre-RFQ reference. Final logistics quote depends on route, volume, customs and carrier schedule.</p>
+        </div>
+        <div class="freight-card">
+          <label>
+            <span data-i18n="destination">Destination</span>
+            <select id="destination">
+              <option value="iraq">Iraq - Umm Qasr / Baghdad</option>
+              <option value="uae">UAE - Dubai</option>
+              <option value="saudi">Saudi Arabia - Riyadh</option>
+              <option value="jordan">Jordan - Amman</option>
+              <option value="turkey">Turkey - Istanbul</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="shippingMode">Shipping Mode</span>
+            <select id="shippingMode">
+              <option value="sea" data-i18n="seaFreight">Sea Freight</option>
+              <option value="land" data-i18n="landFreight">Land Freight</option>
+              <option value="air" data-i18n="airFreight">Air Freight</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="shipmentVolume">Shipment Volume</span>
+            <input id="shipmentVolume" type="number" min="1" value="20" />
+          </label>
+          <button class="btn primary" id="estimateFreight" type="button" data-i18n="estimate">Estimate</button>
+          <div class="freight-result" id="freightResult">$1,680 - $2,120</div>
+        </div>
+      </section>
+
+      <section class="section proof-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="proofEyebrow">Trust & Experience</p>
+            <h2 data-i18n="proofTitle">Export experience, certificates and buyer feedback</h2>
           </div>
         </div>
-        <div class="faq-list">
-          <details open>
-            <summary>是否支持样品？</summary>
-            <p>支持。常规现货可寄 A4 样或色卡，部分开发款需收取打样费。</p>
-          </details>
-          <details>
-            <summary>MOQ 起订量是多少？</summary>
-            <p>不同面料不同，现货款可低 MOQ，下单定染通常按米数或公斤数起订。</p>
-          </details>
-          <details>
-            <summary>可以定制颜色和克重吗？</summary>
-            <p>可以。提供 Pantone 色号或实物样后，可安排 lab dip 和大货生产。</p>
-          </details>
+        <div class="proof-grid">
+          <article>
+            <h3 data-i18n="certificates">Certificates</h3>
+            <p>OEKO-TEX reference, SGS inspection, color fastness report, packing list and CO documents available by order.</p>
+          </article>
+          <article>
+            <h3 data-i18n="marketMap">Export Market</h3>
+            <p>Iraq, UAE, Saudi Arabia, Jordan, Kuwait, Qatar, Turkey, Egypt and North Africa textile distribution channels.</p>
+          </article>
+          <article>
+            <h3 data-i18n="testimonial">Customer Review</h3>
+            <p>“Fast samples, clear stock list and good support for mixed containers to Baghdad.” - Textile wholesaler, Iraq</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-card">
+          <p class="eyebrow" data-i18n="contactEyebrow">Online Service</p>
+          <h2 data-i18n="contactTitle">Contact sales team for samples, stock list and formal quotation</h2>
+          <div class="contact-actions">
+            <a class="btn primary" href="https://wa.me/8613800000000" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a class="btn secondary" href="https://t.me/sinotexsales" target="_blank" rel="noreferrer">Telegram</a>
+            <a class="btn secondary" href="mailto:sales@example.com">sales@example.com</a>
+          </div>
+        </div>
+        <div class="qr-card">
+          <div class="qr-box">WeChat<br />QR</div>
+          <p data-i18n="qrCopy">Replace this block with your real WeChat QR code before launch.</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 Global Textile Hub. Fabric export prototype.</p>
-      <p>FOB / EXW / CIF quote available · Sample service · Global shipping</p>
+      <p>© 2026 SinoTex Middle East. China fabric supplier official website prototype.</p>
+      <p>SEO ready · Google Analytics ready · Future ERP / Node.js / MySQL integration</p>
     </footer>
+
+    <div class="floating-service" aria-label="Quick contact">
+      <a href="https://wa.me/8613800000000" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a href="#rfq" data-i18n="sendRfq">Send RFQ</a>
+    </div>
 
     <script src="script.js"></script>
   </body>
